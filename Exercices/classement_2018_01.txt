@@ -1,0 +1,15 @@
+      1 Saint-Raphaël
+      1 Sandhurst
+      1 Taipei
+      1 Vallée
+      1 Var
+      1 Yvelines
+      1 l'Angleterre
+      2 Bretagne
+      3 Alaska
+      3 Bayeux
+      3 Paris
+      3 États-Unis
+      4 Seine
+      5 Royaume-Uni
+     11 France
