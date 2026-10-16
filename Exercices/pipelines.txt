@@ -1,6 +1,5 @@
 Exercice 1.a :
-
-echo "Annotations en 2016 :" >> ./../../../PPE1-2026/Exercices//comptes.txt
+echo "Annotations en 2016 :" >> ./../../../PPE1-2026/Exercices/comptes.txt
 cat {01,02,03,04,05,06,07,08,09,10,11,12}/2016*.ann | wc -l >> ./../../../PPE1-2026/Exercices/comptes.txt
 echo "Annotations en 2017 :" >> ./../../../PPE1-2026/Exercices//comptes.txt
 cat {01,02,03,04,05,06,07,08,09,10,11,12}/2017*.ann | wc -l >> ./../../../PPE1-2026/Exercices/comptes.txt
@@ -8,12 +7,12 @@ echo "Annotations en 2018 :" >> ./../../../PPE1-2026/Exercices//comptes.txt
 cat {01,02,03,04,05,06,07,08,09,10,11,12}/2018*.ann | wc -l >> ./../../../PPE1-2026/Exercices/comptes.txt
 
 Exercice 1.b :
-echo "Locations en 2016 :" >> ./../../../PPE1-2026/Exercices//locations.txt
-cat {01,02,03,04,05,06,07,08,09,10,11,12}/2016*.ann | grep -c "Location"
-echo "Locations en 2017 :" >> ./../../../PPE1-2026/Exercices//locations.txt
-cat {01,02,03,04,05,06,07,08,09,10,11,12}/2017*.ann | grep -c "Location" >> ./../../../PPE1-2026/Exercices/locations.txt
-echo "Locations en 2018 :" >> ./../../../PPE1-2026/Exercices//locations.txt
-cat {01,02,03,04,05,06,07,08,09,10,11,12}/2018*.ann | grep -c "Location" >> ./../../../PPE1-2026/Exercices/locations.txt
+echo "Locations en 2016 :" > locations.txt
+cat ./../../Exercice1/ann/2016/{01,02,03,04,05,06,07,08,09,10,11,12}/2016*.ann | grep -c "Location" >> locations.txt
+echo "Locations en 2017 :" >> locations.txt
+cat ./../../Exercice1/ann/2017/{01,02,03,04,05,06,07,08,09,10,11,12}/2017*.ann | grep -c "Location" >> locations.txt
+echo "Locations en 2018 :" >> locations.txt
+cat ./../../Exercice1/ann/2018/{01,02,03,04,05,06,07,08,09,10,11,12}/2018*.ann | grep -c "Location" >> locations.txt
 
 Exercice 2.a :
 touch classement_20{16,17,18}.txt
